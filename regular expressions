@@ -1,0 +1,19 @@
+# Regular Expressions
+import re
+t = " Aba Abc Ans Hfg jid"
+for i in t.split():
+    print(i)
+    x = re.findall("^A.*a$", i)
+    print(x)
+
+Output:
+Aba
+['Aba']
+Abc
+[]
+Ans
+[]
+Hfg
+[]
+jid
+[]
